@@ -5,7 +5,6 @@ Description: "Codigos de la previsión del paciente"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * #01 "FONASA"
 * #02 "ISAPRE"

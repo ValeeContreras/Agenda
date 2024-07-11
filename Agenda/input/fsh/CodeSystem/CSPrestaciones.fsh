@@ -5,7 +5,6 @@ Description: "Codigos de las prestaciones"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * #1 "OTRAS CONSULTAS (ABREVIADAS)" 
 * #2 "APLICACIÓN DE SELLANTES"
