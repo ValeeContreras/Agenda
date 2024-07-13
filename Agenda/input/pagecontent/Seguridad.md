@@ -24,7 +24,7 @@ El servidor de autorización valida las credenciales proporcionadas por el clien
 
 **Paso 3:** Envio del recurso más la llave (Token).
 <br>
-Con el token en mano, entra a la URL de la apigatewat, esta por medio de una función de token introspect evalua que el token entregado. 
+Con el token en mano, entra a la URL de la apigateway, esta por medio de una función de token introspect evalua que el token entregado. 
 <br>
 
 **Paso 4:** Envia el recurso más la llave. 

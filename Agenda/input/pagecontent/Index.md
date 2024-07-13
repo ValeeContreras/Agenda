@@ -3,15 +3,51 @@ Esta guía de implementación es diseñada para el uso de datos enfocados en la 
 <br>
 
 ### Introducción
-En la region de Valparaiso según la proyeccion del CENSO 2017, para el año 2023 se estimaba que en la región tendría una población total de 320.816 personas. De este grupo, aproximadamente el 81% está inscrito en la APS. La cual se puede ver segmentada por grupo etario en la siguiente imagen:
+En las APS solicitar una hora médica es bastaste ineficiente para las personas por lo que con esta guía de implementación para un sistema digital que permita gestionar las citas médicas de manera eficiente. Este sistema abarcará la solicitud, confirmación, actualización y consulta de citas médicas.
+
+#### Flujo de trabajo
+
+**Solicitud de hora**
+<br>
+El usuario ingresa a la aplicación para solicitar una hora médica, se requiere los siguientes campos: 
+* Nombre del paciente
+* RUT paciente
+* Fecha de nacimiento
+* Edad
+* Previsión
 <br>
 
-**aca va el grafico**
+Luego el paciente recibe una hora médica.
+<br>
 
+**Acepto/Rechazo de la hora por parte del paciente**
 <br>
-Cada uno de estos grupos etarios enfrenta dificultades particulares para acceder a la información sobre su salud. En la actualidad, al acudir a las APS para agendar citas médicas es bastante tedioso y, en muchos casos, involucra largas esperas, especialmente para los adultos mayores que pueden enfrentarse a condiciones climáticas adversas y riesgos de seguridad mientras aguardan en filas desde la madrugada para ser atendidos en los Centros de Salud Familiar (CESFAM). En relación a las dificultades para los adultos que, en su mayoría, están activos laboralmente y deben gestionar permisos en sus trabajos para acudir a las consultas médicas, lo que no siempre es posible.
+1. El pacienterecibe la información detallada de la cita médica, en la cual incluye:
+* Nombre del Paciente.
+* Médico que prestara la atención.
+* Especialidad del prestador.
+* Fecha y hora de la cita.
+* Servicio que prestara el prestador.
 <br>
+
+2. El paciente decide si aceptar la cita médica o la rechaza.
+<br>
+
+3. Según la decición del paciente, el estado de la cita se actualiza.
+<br>
+
+**Reagendamiento de la hora**
+<br>
+En caso de errores o cambios de información de la cita, estos datos incorrectos se pueden actualizar
+<br>
+
+**Lectura de cita médica**
+<br>
+El ususario puede acceder a la vizualización de sus citas para revisar el historial y detalles de sus citas médicas. 
+<br>
+
 A través de los perfiles se podra realizar operaciones para facilitar la solicitud de una hora médica en las APS.
+Los perfiles aseguran que la información esté estandarizada y sea compatible con los sistemas de salud, permitiendo una gestión eficiente y precisa de las citas médicas.
 
 ### Contenido de la Guía
 Esta guía de implementación se estructura en base al menú de la parte superior de la siguiente manera:

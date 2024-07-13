@@ -25,7 +25,7 @@ Cuando el paciente recibe la respuesta de esta solicitud, el paciente puede acep
 ##### Operación
 Se utiliza el metodo **PUT** para poder aceptar o rechazar la cita medica. Quedando la siguiente transacción:
 <br>
-PUT [URL_Base]/Appointment{id_Appointment}
+PUT [URL_Base]/Appointment/{id_Appointment}
 
 #### Caso de uso 3: Reagendamiento de hora
 Si el paciente necesita reagendar (actualizar)la hora, se puede hacer con la siguiente transacción:
