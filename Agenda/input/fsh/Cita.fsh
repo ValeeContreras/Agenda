@@ -13,6 +13,10 @@ Description: "Una reserva de un evento de atención médica entre pacientes, mé
   * ^short = "La especialidad de un profesional que se requeriría para realizar el servicio solicitado en esta cita"
 * specialty from http://hl7.org/fhir/ValueSet/c80-practice-codes (extensible)
 
+* basedOn 1..1
+  * ^short = "Referencia a la solicitud del servicio"
+* basedOn only Reference(SolicitudServicio)
+
 * participant ^slicing.discriminator[0].type = #value
 * participant ^slicing.discriminator[=].path = "required"
 * participant ^slicing.ordered = false
@@ -53,6 +57,7 @@ Description: "Aca esta el ejemplo de la cita"
 * status = #booked
 * specialty.coding.system = "http://snomed.info/sct"
 * specialty.coding.code = #408467006
+* basedOn = Reference(ServiceRequest/EjemploSolicitudServicio1)
 
 * participant[paciente].actor = Reference(Patient/EjemploPaciente1)
 * participant[paciente].status = #accepted
@@ -73,6 +78,7 @@ Description: "Aca esta el ejemplo de la cita"
 * status = #booked
 * specialty.coding.system = "http://snomed.info/sct"
 * specialty.coding.code = #408467006
+* basedOn = Reference(ServiceRequest/EjemploSolicitudServicio2)
 
 * participant[paciente].actor = Reference(Patient/EjemploPaciente2)
 * participant[paciente].status = #accepted

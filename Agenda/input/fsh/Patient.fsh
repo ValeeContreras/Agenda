@@ -66,7 +66,6 @@ Description: "Ejemplo del paciente."
 * extension[edad].valueInteger = 23
 * extension[prevision].valueCode = #01
 
-
 Instance: EjemploPaciente2
 InstanceOf: Paciente
 Usage: #example
