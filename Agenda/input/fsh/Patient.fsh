@@ -4,8 +4,7 @@ Title: "Perfil del Paciente"
 Description: "Este Perfil del paciente ha sido desarrollado para cubrir las necesidades de Agenda para APS."
 
 * name 1..*
-  * ^short = "Nombre asociado al paciente" 
-  * ^definition = "Patient.name: Un nombre asociado con el individuo."
+  * ^short = "Nombre asociado al paciente." 
   * family 1..1
     * ^short = "Primer Apellido del paciente"
     * extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named SegundoApellido 0..1
@@ -43,22 +42,18 @@ Description: "Este Perfil del paciente ha sido desarrollado para cubrir las nece
 
 * birthDate 1..1
   * ^short = "La fecha de nacimiento del individuo. En el formato (DD-MM-AAAA)." 
-  * ^definition = "Patient.birthDate: La fecha de nacimiento del individuo."
 
 * extension contains Edad named edad 0..1 MS
   * ^short = "Edad del paciente" 
-  * ^definition = "Patient.edad: La edad del individuo. Es un número entero."
 
 * extension contains Prevision named prevision 1..1 MS
   * ^short = "Previsión paciente" 
-  * ^definition = "Patient.Prevision: La previsión del individuo."
-
 
 Instance: EjemploPaciente1
 InstanceOf: Paciente
 Usage: #example
-Title: "Ejemplo del perfil del paciente"
-Description: "Ejemplo del paciente."
+Title: "Ejemplo del perfil del paciente 1"
+Description: "Ejemplo del paciente 1."
 * name.family = "Valentina Daniela"
 * name.given = "Contreras"
 * identifier.value = "20706399-1"
@@ -69,8 +64,8 @@ Description: "Ejemplo del paciente."
 Instance: EjemploPaciente2
 InstanceOf: Paciente
 Usage: #example
-Title: "Ejemplo del perfil del paciente"
-Description: "Ejemplo del paciente."
+Title: "Ejemplo del perfil del paciente 2"
+Description: "Ejemplo del paciente 2."
 * name.family = "Maria Camila"
 * name.given = "Ospina"
 * identifier.value = "25435396-5"

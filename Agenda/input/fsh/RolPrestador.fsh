@@ -2,7 +2,7 @@ Profile: RolPrestador
 Parent: PractitionerRole
 Id: RolPrestador
 Title: "Perfil del Rol del Prestador"
-Description: "Aca esta el perfil del rol del prestador"
+Description: "Este es el perfil del rol del prestador"
 
 * practitioner 1..1
 * practitioner only Reference(Practitioner)

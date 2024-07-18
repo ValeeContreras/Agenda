@@ -5,7 +5,6 @@ Description: "Este perfil es de la organizacion APS."
 
 * name 1..1
   * ^short = "Nombre utilizado para la organización" 
-  * ^definition = "Organitation.name: Un nombre asociado a la organización."
 
 Instance: EjemploOrganizacion
 InstanceOf: Organizacion

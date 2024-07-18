@@ -9,7 +9,7 @@ En las APS solicitar una hora médica es bastaste ineficiente para las personas 
 Esta guía de implementación se estructura en base al menú de la parte superior de la siguiente manera:
 <br>
 
-* [Index](Index.html): Página de Bienvenida a la Guía.
+* [Index](index.html): Página de Bienvenida a la Guía.
 * [Objetivos](Objetivos.html): Información General sobre los objetivos de esta Guía
 * [Casos de Uso](CasosDeUsos.html): Información detallada de los casos de uso, sus actores, y la secuencia de transacciones.
 * [Seguridad](Seguridad.html): Infromación sobre la seguridad.

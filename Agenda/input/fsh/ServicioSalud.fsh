@@ -2,9 +2,9 @@ Profile: ServicioDeSalud
 Parent: HealthcareService
 Id: ServicioDeSalud
 Title: "Perfil del Servicio De Salud"
-Description: "Perfil del Servicio de Salud"
+Description: "Este es el perfil del Servicio de Salud"
 
-* extension contains Servicios named servicios 0..1 MS
+* extension contains Servicios named servicios 1..* MS
   * ^short = "Servicio del prestador" 
 
 Instance: EjemploServicioDeSalud

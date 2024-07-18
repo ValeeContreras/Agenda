@@ -5,12 +5,11 @@ Description: "Este Perfil es del prestador con los datos necesarios del prestado
 
 * name 1..*
   * ^short = "Nombre asociado al paciente" 
-  * ^definition = "Patient.name: A name associated with the individual"
   * family 1..1
     * ^short = "Primer Apellido del paciente"
     * extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named SegundoApellido 0..1
 
-* qualification MS 
+* qualification 1..*
 * qualification ^slicing.discriminator.type = #value 
 * qualification ^slicing.discriminator.path = "code.text" 
 * qualification ^slicing.description = "Debido a que los profeisonales de la salud pueden tener titulo y nform poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos." 
@@ -49,8 +48,8 @@ Esp 0..* MS
 Instance: EjemploPrestador1
 InstanceOf: Prestador
 Usage: #example
-Title: "Ejemplo del perfil del prestador"
-Description: "Ejemplo del prestador"
+Title: "Ejemplo del perfil del prestador 1"
+Description: "Ejemplo del prestador 1"
 
 * name.family = "David"
 * name.given = "Castillo"
@@ -74,8 +73,8 @@ Description: "Ejemplo del prestador"
 Instance: EjemploPrestador2
 InstanceOf: Prestador
 Usage: #example
-Title: "Ejemplo del perfil del prestador"
-Description: "Ejemplo del prestador"
+Title: "Ejemplo del perfil del prestador 2"
+Description: "Ejemplo del prestador 2"
 
 * name.family = "Antonia"
 * name.given = "Cuevas"
