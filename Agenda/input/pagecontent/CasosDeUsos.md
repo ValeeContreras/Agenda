@@ -29,7 +29,7 @@ Se utiliza el método **POST** para enviar una solicitud de creación de una nue
 <br>
 
 ```
-POST [URL_Base]/Appointment/
+POST [URL_Base]/ServiceRequest/
 ```
 
 #### Caso de Uso 2: Acepto/Rechazo de hora 
