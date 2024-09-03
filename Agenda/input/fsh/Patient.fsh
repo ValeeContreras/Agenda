@@ -42,12 +42,14 @@ Description: "Este Perfil del paciente ha sido desarrollado para cubrir las nece
 
 * birthDate 1..1
   * ^short = "La fecha de nacimiento del individuo. En el formato (DD-MM-AAAA)." 
-
+/*
 * extension contains Edad named edad 0..1 MS
   * ^short = "Edad del paciente" 
 
 * extension contains Prevision named prevision 1..1 MS
-  * ^short = "Previsión paciente" 
+  * ^short = "Previsión paciente"
+*/ 
+
 
 Instance: EjemploPaciente1
 InstanceOf: Paciente
@@ -58,9 +60,10 @@ Description: "Ejemplo del paciente 1."
 * name.given = "Contreras"
 * identifier.value = "20706399-1"
 * birthDate = "2001-02-10"
+/*
 * extension[edad].valueInteger = 23
 * extension[prevision].valueCode = #01
-
+*/
 Instance: EjemploPaciente2
 InstanceOf: Paciente
 Usage: #example
@@ -70,5 +73,7 @@ Description: "Ejemplo del paciente 2."
 * name.given = "Ospina"
 * identifier.value = "25435396-5"
 * birthDate = "1999-04-03"
+/*
 * extension[edad].valueInteger = 25
 * extension[prevision].valueCode = #01
+*/
